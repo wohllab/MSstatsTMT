@@ -42,7 +42,7 @@ PDtoMSstatsTMTFormat <- function(input,
 
     if (!all(unique(annotation$Run) %in% unique(input$Spectrum.File))) {
 
-        stop("Please check the annotation file. 'Run' must be matched with 'R.FileName'. ")
+        stop("Please check the annotation file. 'Run' must be matched with 'R.Spectrum.File'. ")
     }
 
     ################################################
